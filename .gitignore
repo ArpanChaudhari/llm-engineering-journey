@@ -67,3 +67,4 @@ htmlcov/
 *.log
 *.tmp
 .cache/
+*.db
