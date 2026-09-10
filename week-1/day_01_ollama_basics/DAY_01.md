@@ -38,7 +38,7 @@ To simulate a "chat thread" where the model remembers your name or earlier quest
 ### 4. Model Sizes and Parameters (1B vs. 270M)
 Models are benchmarked by their parameter count (weights):
 * **`llama3.2:1b` (1.2 Billion parameters):** A larger model with deeper reasoning capabilities. It generates more detailed responses but takes slightly longer to run on consumer hardware.
-* **`gemma3:270m` (270 Million parameters):** A tiny, highly optimized model. It runs extremely fast and uses very little RAM, making it perfect for simple classification or speed-critical tasks.
+* **`gemma3:4b` (270 Million parameters):** A tiny, highly optimized model. It runs extremely fast and uses very little RAM, making it perfect for simple classification or speed-critical tasks.
 
 ---
 
@@ -84,7 +84,7 @@ Here are typical questions recruiters ask during AI Engineering interviews:
 
 #### Q3: If a local model runs too slowly on a machine, what parameters or choices can you adjust?
 **Answer:** You can:
-1. **Choose a smaller model size** (e.g., switching from `llama3.2:3b` to `llama3.2:1b` or `gemma3:270m`).
+1. **Choose a smaller model size** (e.g., switching from `llama3.2:3b` to `llama3.2:1b` or `gemma3:4b`).
 2. **Adjust parameters** like limiting `max_tokens` to stop the model from generating long-winded answers.
 3. **Offload computation** to a GPU if available, or run quantised model weights (which use compressed 4-bit or 8-bit precision instead of 16-bit).
 
@@ -98,5 +98,5 @@ Here are typical questions recruiters ask during AI Engineering interviews:
 
 ## 📝 Resume Bullet Points
 Add this to your resume to showcase today's work to recruiters:
-* *Implemented local LLM deployment pipelines using Ollama to run lightweight open-weight models (`llama3.2:1b`, `gemma3:270m`) offline, reducing development costs to zero.*
+* *Implemented local LLM deployment pipelines using Ollama to run lightweight open-weight models (`llama3.2:1b`, `gemma3:4b`) offline, reducing development costs to zero.*
 * *Engineered modular chat history arrays to manage multi-turn memory state and conversation flow across stateless completions APIs.*
