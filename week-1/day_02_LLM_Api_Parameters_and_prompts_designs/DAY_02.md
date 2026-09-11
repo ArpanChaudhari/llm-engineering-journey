@@ -101,10 +101,3 @@ print(translate("Good morning", "German")) # Output: Guten Morgen
 
 #### Q4: Why is temperature not set inside the standard messages list?
 **Answer:** The messages list represents the *data* (the history of what was said). Temperature, on the other hand, is a *hyperparameter* (a configuration setting that controls how the model runs the generation algorithm). Therefore, it is kept separate, in the `options` (Ollama) or request configurations (OpenAI SDK).
-
----
-
-## 📝 Resume Bullet Points
-* *Configured LLM hyperparameters (such as temperature and token limits) to balance deterministic reasoning and creative content generation across local model deployments.*
-* *Designed robust data-parsing pipelines that enforce structured JSON outputs from local LLMs, enabling direct ingestion of natural language data into Python applications.*
-* *Developed reusable, parameterized prompt templates to separate core instruction logic from dynamic user inputs, improving code modularity and maintainability.*
