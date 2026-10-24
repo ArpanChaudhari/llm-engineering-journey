@@ -33,44 +33,57 @@ Instead of using paid cloud APIs (like OpenAI or Anthropic), **all code in this 
 
 ## 📁 Repository Structure
 
-```
+```text
 LLM/
-├── 📓 day_01_ollama_basics/
-│   └── day_01_ollama_basics.ipynb       # Hello World, Roles, Memory, Benchmarks
+├── 📁 week-1/                                   # Foundations of LLM Engineering
+│   ├── day_01_ollama_basics/
+│   ├── day_02_LLM_Api_Parameters_and_prompts_designs/
+│   ├── day_03_prompt_engineering/
+│   └── day_04_tokens_and_context/
 │
-├── 📓 day_02_models_and_prompts/
-│   └── day_02_models_and_prompts.ipynb  # Temperature controls, JSON, Templates
+├── 📁 week-2/                                   # Frontier APIs & Chatbots
+│   ├── day_01_compatible_apis/
+│   ├── day_02_gradio_ui/
+│   ├── day_03_brochure_ui/
+│   ├── day_04_airline_assistant/
+│   └── day_05_multimodal_artist/
 │
-├── 📓 day_03_prompt_engineering/
-│   └── day_03_prompt_engineering.ipynb  # Few-shot, Chain-of-Thought, AI Code Reviewer
+├── 📁 week-3/                                   # Open-Source Models
+│   ├── day_01_open_source_models/
+│   └── day_02_hf_pipelines/
 │
-├── 📓 day_04_tokens_and_context/
-│   └── day_04_tokens_and_context.ipynb  # Tokenization, tiktoken, strawberry edge cases
-│
-├── requirements.txt                     # All project dependencies
-├── ROADMAP.md                           # Learning roadmap and progress tracker
-└── README.md                            # This file
+├── requirements.txt                             # All project dependencies
+├── ROADMAP.md                                   # Learning roadmap and progress tracker
+└── README.md                                    # This file
 ```
 
 ---
 
 ## 📓 What Each Day Builds
 
-### 🦙 Day 1: Hello, LLMs! — First Contact with Ollama
+### 🦙 Week 1, Day 1: Hello, LLMs! — First Contact with Ollama
 Introduces the core concepts of local LLMs.
 * **Code Built:** Standard Ollama API chat calls, system/user/assistant message arrays, a step-by-step chat history manager to give the AI memory, and a direct latency comparison between `llama3.2:1b` and `gemma3:270m`.
 
-### 🧠 Day 2: LLM API Parameters & Prompt Designs
+### 🧠 Week 1, Day 2: LLM API Parameters & Prompt Designs
 Controls the style and predictability of model output.
 * **Code Built:** Temperature variance analysis (0.0 vs 1.0), extracting formatted database facts into a Python dictionary using Ollama's native JSON output mode, and building translation utilities using reusable prompt templates.
 
-### ✍️ Day 3: Prompt Engineering Mastery
+### ✍️ Week 1, Day 3: Prompt Engineering Mastery
 Masters advanced prompt instructions.
 * **Code Built:** Few-shot comment classification using emoji labels, Chain-of-Thought (CoT) triggers to solve logic and math word problems, and an automated system-prompt-driven **AI Code Reviewer** that critiques bad code snippets.
 
-### 🔢 Day 4: Tokens, Context Windows, and LLM Internals
+### 🔢 Week 1, Day 4: Tokens, Context Windows, and LLM Internals
 Explores how models see and read text.
 * **Code Built:** Word-to-token encoding and decoding using `tiktoken`, context window size budgeting, and a demonstration testing the limits of LLM spelling logic (the "strawberry" letter-counting challenge).
+
+### 🌐 Week 2: Frontier APIs & Chatbots
+Explores compatible APIs, creating user interfaces with Gradio, and building multi-modal assistants.
+* **Code Built:** Drop-in API replacements, web scraping to generate structured AI brochures, a fully interactive Gradio UI chatbot, an intelligent Airline Assistant handling database queries, and a Multi-modal Artist bot.
+
+### 🧩 Week 3: Open-Source Models (Up to Day 2)
+Focuses on running models locally using Hugging Face tools and pipelines.
+* **Code Built:** Loading open-source models directly, setting up the `pipeline()` high-level API for text-generation, NER, zero-shot classification, Text-to-Speech (TTS), and image generation pipelines using Diffusers.
 
 ---
 
