@@ -1,0 +1,3 @@
+Model,Java time (s),Speedup,Status
+Groq — GPT-OSS 120B,1.427452,35.38,Correct
+Groq — Qwen,0.981,51.49,Correct
